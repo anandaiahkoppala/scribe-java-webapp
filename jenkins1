@@ -1,6 +1,6 @@
 node{
     stage('Git Clone'){
-        git 
+        git 'https://github.com/anandaiahkoppala/scribe-java-webapp'
     }
     stage('Maven Package'){
         def mvnHome = tool name: 'Maven', type: 'maven'
